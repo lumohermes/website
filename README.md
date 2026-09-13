@@ -1,2 +1,18 @@
-# website
-iGaming Affiliate Platform
+# iGaming বাংলাদেশ - অ্যাফিলিয়েট প্ল্যাটফর্ম
+
+বাংলাদেশের সেরা iGaming ওয়েবসাইট — রিভিউ, বোনাস, গাইড, টেলিগ্রাম।
+
+## ফিচার
+- ✅ মোবাইল রেসপন্সিভ ডিজাইন
+- ✅ প্রফেশনাল কালার স্কিম
+- ✅ রিভিউ + বোনাস + গাইড সেকশন
+- ✅ টেলিগ্রাম চ্যানেল ইন্টিগ্রেশন
+- ✅ ডিসক্লেইমার ও লিগ্যাল পেজ
+
+## লিংক
+- ওয়েবসাইট: https://lumohermes.github.io/website/
+- গিটহাব: https://github.com/lumohermes/website
+
+## অ্যাফিলিয়েট লিংক যোগ করা
+`<a href="#" class="btn ...">` ট্যাগের href-এ আপনার অ্যাফিলিয়েট রেফারেল লিংক বসান।
+উদাহরণ: `<a href="https://affiliate.com/ref/your-id" class="btn btn-secondary">রিভিউ পড়ুন</a>`

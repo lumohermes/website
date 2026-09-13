@@ -1,0 +1,175 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* হেডার */
+header {
+    background: rgba(0,0,0,0.3);
+    padding: 15px 0;
+    position: sticky; top: 0; z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+header .container {
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+.logo { color: #ff6b6b; font-size: 1.5rem; font-weight: 700; text-decoration: none; }
+
+nav a {
+    color: #fff; text-decoration: none; margin-left: 25px;
+    font-weight: 500; transition: color 0.3s;
+}
+
+nav a:hover { color: #ff6b6b; }
+
+/* হিরো সেকশন */
+.hero {
+    text-align: center; padding: 100px 20px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 20px; margin: 40px 20px;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+.hero h1 {
+    font-size: 2.5rem; color: #fff; margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p { font-size: 1.2rem; color: #ccc; margin-bottom: 30px; }
+
+.hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* বাটন */
+.btn {
+    display: inline-block; padding: 12px 30px; border-radius: 50px;
+    text-decoration: none; font-weight: 600; transition: all 0.3s;
+    border: none; cursor: pointer; color: #fff;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6); }
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ff6b6b;
+}
+
+.btn-secondary:hover { background: #ff6b6b; color: #fff; }
+
+.btn-telegram {
+    background: #0088cc; padding: 15px 40px; font-size: 1.1rem;
+}
+
+.btn-telegram:hover { background: #006699; transform: scale(1.05); }
+
+.btn-link {
+    background: none; color: #ff6b6b; border: none; cursor: pointer;
+    text-decoration: underline; font-weight: 600;
+}
+
+.btn-link:hover { color: #ff8787; }
+
+/* সেকশন */
+section { padding: 60px 0; }
+
+.section-title {
+    text-align: center; font-size: 2.2rem; color: #ff6b6b;
+    margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px;
+}
+
+/* রিভিউ গ্রিড */
+.review-grid, .bonus-grid, .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review-card, .bonus-card, .guide-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px; border-radius: 15px;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    transition: all 0.3s;
+}
+
+.review-card:hover, .bonus-card:hover, .guide-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff6b6b;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.review-card h3, .bonus-card h3, .guide-card h3 {
+    color: #fff; font-size: 1.4rem; margin-bottom: 10px;
+}
+
+.card-badge {
+    display: inline-block; background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: #fff; padding: 5px 15px; border-radius: 20px;
+    font-size: 0.85rem; font-weight: 600; margin-bottom: 10px;
+}
+
+.rating { color: #ffd700; font-size: 1.1rem; margin-bottom: 15px; }
+
+.review-card p, .guide-card p { color: #ccc; margin-bottom: 20px; }
+
+.bonus-icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+.bonus-code {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: #fff; padding: 10px 20px; border-radius: 5px;
+    font-family: monospace; font-size: 1.2rem; text-align: center;
+    margin: 15px 0; letter-spacing: 2px;
+}
+
+.guide-number {
+    display: inline-block; background: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b; padding: 5px 15px; border-radius: 5px;
+    font-weight: 700; margin-bottom: 10px;
+}
+
+/* কন্টাক্ট কার্ড */
+.contact-card {
+    text-align: center; padding: 40px;
+    background: rgba(0, 136, 204, 0.1);
+    border-radius: 15px; border: 2px solid #0088cc;
+}
+
+.contact-card p { color: #ccc; font-size: 1.1rem; margin-bottom: 20px; }
+
+.contact-note { color: #888; font-size: 0.9rem; margin-top: 15px; }
+
+/* ফুটার */
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 0; margin-top: 60px; text-align: center;
+}
+
+footer .container p { color: #aaa; margin-bottom: 10px; }
+
+.disclaimer {
+    margin-top: 20px; padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.disclaimer p { font-size: 0.9rem; color: #888; margin-bottom: 10px; }
+
+/* রেসপন্সিভ */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2rem; }
+    nav a { margin-left: 15px; font-size: 0.9rem; }
+    .section-title { font-size: 1.8rem; }
+    .hero-buttons { flex-direction: column; align-items: center; }
+}
